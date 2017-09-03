@@ -11,8 +11,3 @@ test:
   override:
     - echo "test"
 
-deployment:
-  production:
-    branch: "develop"
-    commands:
-      - DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com METEOR_SESSION_FILE=deployment_token.json meteor deploy http://rocket.trialdash.com --owner emissary --settings settings.json
