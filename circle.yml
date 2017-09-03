@@ -3,7 +3,6 @@ dependencies:
     - ~/.meteor
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
-    - npm install phantomjs
     - meteor npm install
 
 
@@ -11,3 +10,8 @@ test:
   override:
     - echo "test"
 
+deployment:
+  production:
+    branch: "develop"
+    commands:
+      - DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com METEOR_SESSION_FILE=deployment_token.json meteor deploy rocket.trialdash.com --owner emissary --settings settings.json
