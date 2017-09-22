@@ -7,6 +7,10 @@
       "userId": "pJef5wPAdDruqaLai",
       "token": "VhxpaxF_XtbcoIMSoa2IemYU6tOlC2bwCF0HieMyedn",
       "tokenId": "a86Z49oetI9eynsYyP9KFc4UErnrZDgJFLQewicG/ZA="
+    },
+    "activity.meteor.com": {
+      "type": "package-stats-server",
+      "token": "ZnQhhdeooB2O_5t7UtTreRZdJ_kICI3tsgxw_Qfjrgl"
     }
   }
 }
