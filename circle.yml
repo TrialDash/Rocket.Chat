@@ -4,7 +4,7 @@ dependencies:
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
     - meteor npm install
-    - sudo npm install -g phantomjs@2.1.1 --unsafe-perm
+    - npm -v
 
 
 test:
