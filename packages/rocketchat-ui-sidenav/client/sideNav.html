@@ -1,4 +1,5 @@
 <template name="sideNav">
+{{#if showAdminOption}}
 		<aside class="sidebar" role="navigation">
 			<header class="sidebar__header">
 				{{> accountBox }}
@@ -40,4 +41,5 @@
 			</footer>
 		</aside>
 		<div class="sidebar-wrap"></div>
+	{{/if}}
 </template>

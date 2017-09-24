@@ -23,7 +23,11 @@ Template.sideNav.helpers({
 
 	roomType() {
 		return RocketChat.roomTypes.getTypes();
+	},
+	showAdminOption() {
+		return RocketChat.authz.hasAtLeastOnePermission(['view-statistics', 'view-room-administration', 'view-user-administration', 'view-privileged-setting' ]) || (RocketChat.AdminBox.getOptions().length > 0);
 	}
+
 });
 
 Template.sideNav.events({
