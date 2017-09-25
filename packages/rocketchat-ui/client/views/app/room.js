@@ -156,7 +156,9 @@ Template.room.helpers({
 		const roomData = Session.get(`roomData${ this._id }`);
 		if (!roomData) { return ''; }
 
-		return RocketChat.roomTypes.getRoomName(roomData.t, roomData);
+		var rname = RocketChat.roomTypes.getRoomName(roomData.t, roomData);
+		rname = rname.replace(/[0-9]/g, '');
+		return rname;
 	},
 
 	secondaryName() {
