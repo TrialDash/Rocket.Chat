@@ -12,7 +12,11 @@ test:
     - echo "test"
 
 deployment:
-  production:
+  dev:
     branch: "develop"
     commands:
       - DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com METEOR_SESSION_FILE=deployment_token.json meteor deploy rocket.trialdash.com --owner emissary --settings settings.json
+  prod:
+    branch: "master"
+    commands:
+      - DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com METEOR_SESSION_FILE=deployment_token.json meteor deploy rocket.teamtrials.com --owner emissary --settings settings-prod.json

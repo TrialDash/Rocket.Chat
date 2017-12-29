@@ -71,5 +71,6 @@ tramp
 ecosystem.json
 pm2.json
 settings.json
+settings-prod.json
 build.sh
 /public/livechat
